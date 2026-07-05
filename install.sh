@@ -29,7 +29,7 @@ case "$OS_TYPE" in
     alpine)
         PKG_MGR="apk"
         ;;
-    centos|rhel|rocky|almalinux|fedora|ol|amzn)
+    centos|rhel|rocky|almalinux|fedora|ol|amzn|opencloudos)
         if command -v dnf >/dev/null 2>&1; then
             PKG_MGR="dnf"
         else
